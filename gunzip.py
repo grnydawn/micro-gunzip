@@ -12,7 +12,7 @@ from microapp import App
 class Gunzip(App):
 
     _name_ = "gunzip"
-    _version_ = "0.1.4"
+    _version_ = "0.1.7"
     _description_ = "Microapp gunzip"
     _long_description_ = "Microapp gunzip"
     _author_ = "Youngsung Kim"
@@ -43,4 +43,4 @@ class Gunzip(App):
                 #    shutil.copyfileobj(f_in, f_out)
 
             f_in.seek(0)
-            self.add_forward(data=f_in.read())
+            self.add_forward(data=f_in.read().decode())
