@@ -12,7 +12,7 @@ from microapp import App
 class Gunzip(App):
 
     _name_ = "gunzip"
-    _version_ = "0.1.8"
+    _version_ = "0.1.9"
     _description_ = "Microapp gunzip"
     _long_description_ = "Microapp gunzip"
     _author_ = "Youngsung Kim"

@@ -3,14 +3,13 @@ from microapp import MicroappProject
 import os
 
 here = os.path.dirname(os.path.abspath(__file__))
-app = os.path.join(here, "..", "gunzip.py")
 zipped = os.path.join(here, "data.gz")
 unzipped = os.path.join(here, "data")
 
 def test_basic():
 
     prj = MicroappProject()
-    cmd = "%s %s -o %s" % (app, zipped, unzipped)
+    cmd = "gunzip %s -o %s" % (zipped, unzipped)
 
     ret = prj.main(cmd)
 

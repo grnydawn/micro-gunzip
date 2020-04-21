@@ -26,9 +26,9 @@ def main():
             "Programming Language :: Python :: 3.8",
         ],
         keywords="microapp gunzip",
+        packages=["gunzip"],
         include_package_data=True,
         install_requires=install_requires,
-        scripts=["gunzip.py"],
         entry_points={"microapp.apps": "gunzip = gunzip"},
         project_urls={
             "Bug Reports": "https://github.com/grnydawn/micro-gunzip/issues",
