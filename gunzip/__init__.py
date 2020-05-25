@@ -12,7 +12,7 @@ from microapp import App
 class Gunzip(App):
 
     _name_ = "gunzip"
-    _version_ = "0.1.9"
+    _version_ = "0.1.10"
     _description_ = "Microapp gunzip"
     _long_description_ = "Microapp gunzip"
     _author_ = "Youngsung Kim"
@@ -26,7 +26,7 @@ class Gunzip(App):
 
         self.register_forward("data", type=Any, help="unzipped binary data")
 
-    def perform(self, mgr, args):
+    def perform(self, args):
 
         zipfile = args.zipfile["_"]
 

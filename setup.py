@@ -5,7 +5,7 @@ def main():
     from setuptools import setup
     from gunzip import Gunzip
 
-    install_requires = ["microapp>=0.1.11"]
+    install_requires = ["microapp>=0.2.3"]
 
     setup(
         name=Gunzip._name_,
